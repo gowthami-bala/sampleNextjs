@@ -32,6 +32,7 @@ const Task:React.FC<TaskProps> = ({task}) => {
 
       const handleDelete = async (id:string) =>{
         await DeleteTodo(id)
+        window.location.reload();
       }
   return (
     <>
